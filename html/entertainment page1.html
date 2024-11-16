@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IS2 Learning</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="icon" href="IS2 LEarning.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/lesson 1.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <a href="welcome.html" class="NavLogo">
+                <img class="logo" src="../pics/IS2 LEarning.png" alt="IS2 Logo">
+                <img class="LogoName" src="../pics/LogoName.png" alt="Logo Name">
+            </a>
+            <ul>
+                <li class="shadow"><a href="about page.html">About <i class="fa-solid fa-envelope"></i></a></li>
+                <li class="shadow"><a href="article page.html">Articles <i class="fa-solid fa-clipboard"></i></a></li>
+                <li class="shadow">
+                    <a href="#" onclick="toggleSubmenu('games-submenu')">Games <i class="fa-solid fa-gamepad"></i></a>
+                    <ul id="games-submenu" class="submenu">
+                        <li><a href="game page1.html">Game 1</a></li>
+                        <li><a href="game page2.html">Game 2</a></li>
+                      <li><a href="game3.html">Game 3</a></li>
+                    </ul>
+                  </li>
+                  
+                  <li class="covered">
+                    <a href="#" onclick="toggleSubmenu('entertainment-submenu')">Entertainment <i class="fa-regular fa-newspaper"></i></a>
+                    <ul id="entertainment-submenu" class="submenu">
+                        <li><a href="entertainment page1.html">Movie 1</a></li>
+                        <li><a href="entertainment page2.html">Movie 2</a></li>
+                        <li><a href="entertainment page3.html">Movie 3</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="shadow">
+                    <a href="#" onclick="toggleSubmenu('Lesson-submenu')">Lessons <i class="fa-solid fa-book"></i></a>
+                    <ul id="Lesson-submenu" class="submenu">
+                        <li><a href="lesson page1.html">HTML</a></li>
+                        <li><a href="entertainment page2.html">Lesson 2</a></li>
+                        <li><a href="entertainment page3.html">Lesson 3</a></li>
+                    </ul>
+                  </li>
+            </ul>  
+            <div class="social_media">
+              <a href="#"><i class="fa-solid fa-gear"></i></a>
+              <a href="#"><i class="fa-solid fa-bread-slice"></i></a>
+              <a href="../index.html"><i class="fa-solid fa-right-from-bracket"></i></a>
+          </div>
+        </div>
+        <div class="main_content">
+            <div class="header">LEGENDARY FLIPTOP BATTLE</div>  
+            <div class="info">
+                <iframe width="900" height="515" src="https://www.youtube.com/embed/WeXSYGykrtw?si=jNv6acKRni45dqVM&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div id="big">PIPI VS MONGOLOID 2013!!!</div>
+                <div id="justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa vero, fuga et nihil quas iure perspiciatis, ipsa distinctio minima nisi assumenda mollitia incidunt explicabo corporis quibusdam, error quae nostrum similique.</div>
+                <div id="justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa vero, fuga et nihil quas iure perspiciatis, ipsa distinctio minima nisi assumenda mollitia incidunt explicabo corporis quibusdam, error quae nostrum similique.</div>
+                <div id="justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa vero, fuga et nihil quas iure perspiciatis, ipsa distinctio minima nisi assumenda mollitia incidunt explicabo corporis quibusdam, error quae nostrum similique.</div>
+                <div id="justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa vero, fuga et nihil quas iure perspiciatis, ipsa distinctio minima nisi assumenda mollitia incidunt explicabo corporis quibusdam, error quae nostrum similique.</div>
+                <div id="justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa vero, fuga et nihil quas iure perspiciatis, ipsa distinctio minima nisi assumenda mollitia incidunt explicabo corporis quibusdam, error quae nostrum similique.</div>
+
+          </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleSubmenu(id) {
+        const submenu = document.getElementById(id);
+        submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+        }
+
+    </script>
+
+    </body>
+</html>
+    

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IS2 Learning</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="icon" href="IS2 LEarning.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/lesson 1.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <a href="welcome.html" class="NavLogo">
+                <img class="logo" src="../pics/IS2 LEarning.png" alt="IS2 Logo">
+                <img class="LogoName" src="../pics/LogoName.png" alt="Logo Name">
+            </a>
+            <ul>
+                <li class="shadow"><a href="about page.html">About <i class="fa-solid fa-envelope"></i></a></li>
+                <li class="shadow"><a href="article page.html">Articles <i class="fa-solid fa-clipboard"></i></a></li>
+                <li class="covered">
+                    <a href="#" onclick="toggleSubmenu('games-submenu')">Games <i class="fa-solid fa-gamepad"></i></a>
+                    <ul id="games-submenu" class="submenu">
+                        <li><a href="game page1.html">Game 1</a></li>
+                        <li><a href="game page2.html">Game 2</a></li>
+                        <li><a href="game3.html">Game 3</a></li>
+                    </ul>
+                </li>
+                <li class="shadow">
+                    <a href="#" onclick="toggleSubmenu('entertainment-submenu')">Entertainment <i class="fa-regular fa-newspaper"></i></a>
+                    <ul id="entertainment-submenu" class="submenu">
+                        <li><a href="entertainment page1.html">Movie 1</a></li>
+                        <li><a href="entertainment page2.html">Movie 2</a></li>
+                        <li><a href="entertainment page3.html">Movie 3</a></li>
+                    </ul>
+                </li>
+
+                <li class="shadow">
+                    <a href="#" onclick="toggleSubmenu('Lesson-submenu')">Lessons <i class="fa-solid fa-book"></i></a>
+                    <ul id="Lesson-submenu" class="submenu">
+                        <li><a href="lesson page1.html">HTML</a></li>
+                        <li><a href="entertainment page2.html">Lesson 2</a></li>
+                        <li><a href="entertainment page3.html">Lesson 3</a></li>
+                    </ul>
+                  </li>
+            </ul>  
+            <div class="social_media">
+                <a href="#"><i class="fa-solid fa-gear"></i></a>
+                <a href="#"><i class="fa-solid fa-bread-slice"></i></a>
+                <a href="../index.html"><i class="fa-solid fa-right-from-bracket"></i></a>
+            </div>
+        </div>
+        <div class="main_content">
+            <div class="header">Game 1: Fun Fact Quizzes!</div>  
+            <div class="info">
+                <div class="quiz-container">
+                    <h2>Quick Quiz</h2>
+                    <div id="question-container">
+                        <p id="question">Question will appear here...</p>
+                        <div id="answer-buttons" class="btn-container">
+                            <button class="answer-btn">Answer 1</button>
+                            <button class="answer-btn">Answer 2</button>
+                            <button class="answer-btn">Answer 3</button>
+                            <button class="answer-btn">Answer 4</button>
+                        </div>
+                    </div>
+                    <button id="next-btn" class="next-btn">Next Question</button>
+                    <p id="score">Score: 0</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const questions = [
+            {
+                question: "What is the meaning of HTML?",
+                answers: [
+                    { text: "Hyper text Markup Language", correct: false },
+                    { text: "Hyper text Mark up Language", correct: false },
+                    { text: "Hypertext Markup Language", correct: true },
+                    { text: "Hypertext Mark up Language", correct: false },
+                ]
+            },
+            {
+                question: "Which of the following is hardware?",
+                answers: [
+                    { text: "Program", correct: false },
+                    { text: "OS", correct: false },
+                    { text: "MS Office", correct: false },
+                    { text: "Monitor", correct: true },
+                ]
+            },
+            {
+                question: "What is 9 + 10?",
+                answers: [
+                    { text: "19", correct: false },
+                    { text: "18", correct: false },
+                    { text: "21", correct: true },
+                    { text: "20", correct: false },
+                ]
+            },
+            {
+                question: "which color mode does a computer monitor use?",
+                answers: [
+                    { text: "RGB", correct: true },
+                    { text: "LGBT", correct: false },
+                    { text: "CMYK", correct: false },
+                    { text: "LAB", correct: false },
+                ]
+            },
+            {
+                question: "Choose the correct HTML element for the largest heading:",
+                answers: [
+                    { text: "<heading>", correct: false },
+                    { text: "<h1>", correct: true },
+                    { text: "<p>", correct: false },
+                    { text: "<h7>", correct: false },
+                ]
+            }
+        ];
+
+        let currentQuestionIndex = 0;
+        let score = 0;
+
+        const questionElement = document.getElementById('question');
+        const answerButtons = document.getElementById('answer-buttons');
+        const nextButton = document.getElementById('next-btn');
+        const scoreElement = document.getElementById('score');
+
+        function startGame() {
+            currentQuestionIndex = 0;
+            score = 0;
+            scoreElement.innerText = `Score: ${score}`;
+            nextButton.style.display = "none";
+            showQuestion();
+        }
+
+        function showQuestion() {
+            resetState();
+            const currentQuestion = questions[currentQuestionIndex];
+            questionElement.innerText = currentQuestion.question;
+
+            currentQuestion.answers.forEach(answer => {
+                const button = document.createElement("button");
+                button.innerText = answer.text;
+                button.classList.add("answer-btn");
+                button.addEventListener("click", () => selectAnswer(answer));
+                answerButtons.appendChild(button);
+            });
+        }
+
+        function resetState() {
+            nextButton.style.display = "none";
+            while (answerButtons.firstChild) {
+                answerButtons.removeChild(answerButtons.firstChild);
+            }
+        }
+
+        function selectAnswer(answer) {
+            if (answer.correct) {
+                score++;
+                scoreElement.innerText = `Score: ${score}`;
+            }
+            nextButton.style.display = "block";
+        }
+
+        function handleNextButton() {
+            currentQuestionIndex++;
+            if (currentQuestionIndex < questions.length) {
+                showQuestion();
+            } else {
+                questionElement.innerText = `Quiz Finished! Final Score: ${score}`;
+                nextButton.innerText = "Restart Quiz";
+                nextButton.style.display = "block";
+                nextButton.addEventListener("click", startGame);
+            }
+        }
+
+        nextButton.addEventListener("click", handleNextButton);
+
+        startGame();
+
+        function toggleSubmenu(id) {
+            const submenu = document.getElementById(id);
+            submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>

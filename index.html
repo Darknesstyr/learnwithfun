@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IS2 Learning</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="icon" href="IS2 LEarning.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/IS2-CSS.css">
+</head>
+<body>
+    <header class="Navbar">
+        <a href="https://www.google.com/?fpdoodle=1&doodle=306734893&hl=en&gl=PH" class="NavLogo">
+            <img class="logo" src="pics/IS2 LEarning.png" alt="IS2 Logo">
+            <img class="LogoName" src="pics/LogoName.png" alt="Logo Name">
+        </a>
+        <nav>
+            <ul class="nav-list">
+                <li><a class="navlister1" href="#first-block">About Us</a></li>
+                <li><a class="navlister1" href="#second-block">Learning Materials</a></li>
+                <li><a class="navlister2" href="#third-block">Contact us!</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="head-intro">
+        <article id="third-block">
+            <h3 class="h3-color">Learn how to create the content that matters.</h3>
+            <h1 class="h1-color">Educate yourself to become <br> who you wanted to be<span></span></h1>
+        </article>
+        <a class="navlisters" id="buts">Connect With us &#x2192;</a>
+    </section>
+
+
+<div class="overlay" id="overlay">
+    <div class="floating-window" id="login-form">
+        <span class="close-btn" id="close-btn">&times;</span>
+        <h2>Login</h2>
+        <form action="html/welcome.html">
+
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="password" required>
+            
+            <button id="color-form1" type="submit">Login</button>
+            <p>Still not registered? <a href="#" class="style-a" id="show-registration-form">register now</a></p>
+        </form>
+    </div>
+
+ 
+    <div class="floating-window" id="registration-form" style="display: none;">
+        <span class="close-btn" id="close-btn-registration">&times;</span>
+        <h2>Register</h2>
+        <div>
+            <label for="register-username">Username</label>
+            <input type="text" id="register-username" name="username" placeholder="username" required>
+            
+            <label for="register-email">Email</label>
+            <input type="text" id="register-email" name="email" placeholder="email" required>
+            
+            <label for="register-password">Password</label>
+            <input type="password" id="register-password" name="password" placeholder="password" required>
+            
+            <button id="color-form" type="button" name="register" value="register">Register</button>
+            <p>Pressing the Register button you are accepting our 
+                <a href="html/TOS.html" class="style-a" id="show-termsandservices">Terms and Services.</a>
+            </p>
+            <p>Registered? 
+                <a href="#" class="style-a" id="show-floating-window">Login now!</a>
+            </p>
+        </div>
+    </div>
+        
+      
+    </div>
+</div>
+
+    
+
+
+    <section class="head-intro1">
+        <iframe id="vids" width="900" height="415" src="https://www.youtube-nocookie.com/embed/HELBJQmbSIk?si=Q3krm9AmG5YJwH46&autoplay=1&mute=1&controls=0" title="YouTube video player" frameborder="0" allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+
+    <section class="head-intro2" id="first-block">
+        <div class="h1-color1">
+            <div class="background">
+                <h1 id="color">7</h1>
+                <span id="disp">founders</span>
+            </div>
+        </div>
+        <div class="h1-color1"> 
+            <div class="background1">
+                <h1 id="color1">10M&#43;</h1>
+                <span id="disp">Learners</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="head-intro1">
+        <iframe id="vids" width="900" height="415" src="https://www.youtube.com/embed/ySh4xT5xA-0?si=0JUR_UPOLfLTywtg&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    </section>
+    
+    <section class="head-intro2" id="second-block">
+        <div class="h1-color1">
+            <div class="background1">
+                <h1 id="color1">Learning Materials:</h1>
+                <div id="contents-container">
+                    <p id="contents">HTML:</p>
+                    <ol>
+                        <li>Basics</li>
+                        <li>Designs</li>
+                        <li>Basics: JavaScript</li>
+                    </ol>
+                </div>
+                <div id="contents-container">
+                    <p id="contents">HTML:</p>
+                    <ol>
+                        <li>Basics</li>
+                        <li>Designs</li>
+                        <li>Basics: JavaScript</li>
+                    </ol>
+                </div>
+                <div id="contents-container">
+                    <p id="contents">HTML:</p>
+                    <ol>
+                        <li>Basics</li>
+                        <li>Designs</li>
+                        <li>Basics: JavaScript</li>
+                    </ol>
+                </div>
+            </div> 
+        </div>
+    </section>
+    
+
+    <script>
+        const overlay = document.getElementById('overlay');
+        const loginForm = document.getElementById('login-form');
+        const registrationForm = document.getElementById('registration-form');
+        const showRegistrationFormLink = document.getElementById('show-registration-form');
+        const closeLoginForm = document.getElementById('close-btn');
+        const closeRegistrationForm = document.getElementById('close-btn-registration');
+
+        document.getElementById('buts').addEventListener('click', function() {
+            overlay.style.display = 'flex';
+            loginForm.style.display = 'block';
+            registrationForm.style.display = 'none';
+        });
+
+        showRegistrationFormLink.addEventListener('click', function(e) {
+            e.preventDefault(); 
+            loginForm.style.display = 'none';
+            registrationForm.style.display = 'block';
+        });
+
+        closeLoginForm.addEventListener('click', function() {
+            overlay.style.display = 'none';
+        });
+
+        closeRegistrationForm.addEventListener('click', function() {
+            overlay.style.display = 'none';
+        });
+
+        overlay.addEventListener('click', function(e) {
+            if (e.target === overlay) {
+                overlay.style.display = 'none';
+            }
+        });
+
+        document.getElementById('buts').addEventListener('click', function() {
+            document.getElementById('overlay').style.display = 'flex';
+        });
+
+        document.getElementById('close-btn').addEventListener('click', function() {
+            document.getElementById('overlay').style.display = 'none';
+        });
+
+        document.getElementById('overlay').addEventListener('click', function(e) {
+            if (e.target === this) {
+                document.getElementById('overlay').style.display = 'none';
+            }
+        });
+
+        const showLoginFormLink = document.getElementById('show-floating-window');
+
+        showLoginFormLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            registrationForm.style.display = 'none';
+            loginForm.style.display = 'block';
+        });
+        
+        window.scrollTo(0, 0);
+
+        let lastScrollTop = 0;
+        const navbar = document.querySelector('.Navbar');
+
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (currentScroll === 0) {
+                
+                navbar.style.opacity = '1'; 
+            } else if (currentScroll > lastScrollTop) {
+                
+                navbar.style.opacity = '0'; 
+            } else {
+                
+                navbar.style.opacity = '1'; 
+            }
+            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+        });
+    </script>
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
+        import { getDatabase, set, ref, update } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-database.js";
+        import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-auth.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyDewyvsjf7du-pS8WU0kiop2r7EqpuddR0",
+            authDomain: "is2learn.firebaseapp.com",
+            databaseURL: "https://is2learn-default-rtdb.asia-southeast1.firebasedatabase.app",
+            projectId: "is2learn",
+            storageBucket: "is2learn.firebasestorage.app",
+            messagingSenderId: "806093789223",
+            appId: "1:806093789223:web:9648ce52f63105a8205602"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth();
+        const database = getDatabase(app); // Initialize the database
+
+        // Registration logic
+        const registerButton = document.getElementById('color-form');
+        registerButton.addEventListener('click', (e) => {
+            e.preventDefault();
+
+            // Get input values
+            const email = document.getElementById('register-email').value.trim();
+            const password = document.getElementById('register-password').value.trim();
+            const username = document.getElementById('register-username').value.trim();
+
+            console.log('Email:', email); // Log for debugging
+
+            // Validate email format
+            if (!isValidEmail(email)) {
+                alert('Please enter a valid email address.');
+                return;
+            }
+
+            // Validate password length
+            if (password.length < 6) {
+                alert('Password must be at least 6 characters long.');
+                return;
+            }
+
+            // Validate username
+            if (!username) {
+                alert('Username is required.');
+                return;
+            }
+
+            // Create user in Firebase
+            createUserWithEmailAndPassword(auth, email, password)
+                .then((userCredential) => {
+                    const user = userCredential.user;
+
+                    set(ref(database, 'users/' + user.uid), {
+                        username: username,
+                        email: email
+                    })
+                    .then(() => {
+                        alert('User created successfully and data saved to database!');
+                    })
+                    .catch((dbError) => {
+                        console.error('Error saving to database:', dbError);
+                        alert('Error saving user data.');
+                    });
+                })
+                .catch((error) => {
+                    console.error('Error creating user:', error);
+                    alert(error.message);
+                });
+        });
+
+        // Login logic
+        const loginButton = document.getElementById('color-form1');
+        loginButton.addEventListener('click', (e) => {
+            e.preventDefault();
+
+            // Get input values
+            const email = document.getElementById('email').value.trim();
+            const password = document.getElementById('password').value.trim();
+
+            if (!email || !password) {
+                alert('Please enter both email and password');
+                return;
+            }
+
+            // Sign in user
+            signInWithEmailAndPassword(auth, email, password)
+                .then((userCredential) => {
+                    const user = userCredential.user;
+                    const dt = new Date();
+                    update(ref(database, 'user/' + user.uid), {
+                        last_login: dt,
+                    });
+
+                    alert('Welcome!');
+                    window.location.href = "html/welcome.html";  // Redirect to another page on success
+                })
+                .catch((error) => {
+                    const errorCode = error.code;
+                    const errorMessage = error.message;
+                    alert('Error: invalid email/password'); 
+                });
+        });
+
+        // Email validation function
+        function isValidEmail(email) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+
+
+    </script>
+    
+</body>
+</html>

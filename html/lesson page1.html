@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IS2 Learning</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="icon" href="IS2 LEarning.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/lesson page.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <a href="welcome.html" class="NavLogo">
+                <img class="logo" src="../pics/IS2 LEarning.png" alt="IS2 Logo">
+                <img class="LogoName" src="../pics/LogoName.png" alt="Logo Name">
+            </a>
+            <ul>
+                <li class="shadow"><a href="about page.html">About <i class="fa-solid fa-envelope"></i></a></li>
+                <li class="shadow"><a href="article page.html">Articles <i class="fa-solid fa-clipboard"></i></a></li>
+                <li class="shadow">
+                    <a href="#" onclick="toggleSubmenu('games-submenu')">Games <i class="fa-solid fa-gamepad"></i></a>
+                    <ul id="games-submenu" class="submenu">
+                        <li><a href="game page1.html">Game 1</a></li>
+                        <li><a href="game page2.html">Game 2</a></li>
+                      <li><a href="game3.html">Game 3</a></li>
+                    </ul>
+                  </li>
+                  
+                  <li class="shadow">
+                    <a href="#" onclick="toggleSubmenu('entertainment-submenu')">Entertainment <i class="fa-regular fa-newspaper"></i></a>
+                    <ul id="entertainment-submenu" class="submenu">
+                        <li><a href="entertainment page1.html">Movie 1</a></li>
+                        <li><a href="entertainment page2.html">Movie 2</a></li>
+                        <li><a href="entertainment page3.html">Movie 3</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="covered">
+                    <a href="#" onclick="toggleSubmenu('Lesson-submenu')">Lessons <i class="fa-solid fa-book"></i></a>
+                    <ul id="Lesson-submenu" class="submenu">
+                        <li><a href="lesson page1.html">HTML</a></li>
+                        <li><a href="entertainment page2.html">Lesson 2</a></li>
+                        <li><a href="entertainment page3.html">Lesson 3</a></li>
+                    </ul>
+                  </li>
+            </ul>  
+            <div class="social_media">
+              <a href="#"><i class="fa-solid fa-gear"></i></a>
+              <a href="#"><i class="fa-solid fa-bread-slice"></i></a>
+              <a href="../index.html"><i class="fa-solid fa-right-from-bracket"></i></a>
+          </div>
+        </div>
+        <div class="main_content">
+            <div class="header">Lesson 1: HTML</div>  
+            <div class="info">
+                <iframe width="900" height="515" src="https://www.youtube.com/embed/salY_Sm6mv4?si=5raZwPdvcOTGyeWt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div id="big">BASICS: </div>
+                <div id="justify">
+                    <p><b>1. What is HTML?</b><br>
+                    HTML (HyperText Markup Language) is the standard language used to create web pages. It structures content on the web using "tags" that define elements such as headings, paragraphs, links, images, and more.</p><br>
+                    
+                    <p><b>2. Basic HTML Structure</b><br>
+                    Every HTML document follows a basic structure that includes a declaration of the document type, a root element, a head section for metadata, and a body section for visible content.</p><br>
+                
+                    <p><b>3. Common Tags</b><br>
+                    Headings: Used to create titles and subtitles, ranging from the largest size (Heading 1) to the smallest size (Heading 6).<br>
+                    Paragraphs: Used to add blocks of text.<br>
+                    Links: Used to create clickable text that navigates to other pages or resources.<br>
+                    Images: Used to display pictures on a webpage.<br>
+                    Lists: Used to organize items. They can be unordered (bulleted) or ordered (numbered).</p><br>
+                
+                    <p><b>4. Attributes</b><br>
+                    Attributes provide additional information about an HTML element. For example, a link can include an attribute specifying the URL it points to, or an image can include an attribute describing the image content.</p><br>
+                
+                    <p><b>5. Creating Forms</b><br>
+                    Forms are used to collect user input. They often include text fields, buttons, and other elements to gather and submit information.</p><br>
+                
+                    <p><b>6. Semantic HTML</b><br>
+                    Semantic HTML uses tags that convey meaning and improve accessibility and SEO. For example:<br>
+                    A header section is identified with a "header" tag.<br>
+                    The main content is identified with a "main" tag.<br>
+                    Articles or individual pieces of content are identified with an "article" tag.</p><br>
+                
+                    <p><b>7. Inline vs. Block Elements</b><br>
+                    Inline elements do not start on a new line and only take up as much width as necessary.<br>
+                    Block elements start on a new line and take up the full width available.</p><br>
+                
+                    <p><b>8. Comments</b><br>
+                    Comments are used to add notes within the code. These notes are not visible on the webpage and are used for documentation purposes.</p><br>
+                
+                    <p><b>9. Example Project</b><br>
+                    A basic HTML webpage typically includes a title, a header with a welcome message, a main section with text and images, and a footer with copyright information.</p><br>
+                
+                    <p><b>10. Additional Resources</b><br>
+                    To learn more about HTML, you can explore beginner-friendly tutorials and documentation from trusted sources like W3Schools and MDN Web Docs.</p><br>
+                </div>
+                <br>
+
+                <iframe width="900" height="515" src="https://www.youtube.com/embed/Z4pCqK-V_Wo?si=rUmGIwyYFBleo_EY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div id="big">CSS BASICS: </div>
+                <div id="justify">
+                    <p><b>1. What is CSS?</b><br>
+                    CSS (Cascading Style Sheets) is the language used to style web pages. It controls how HTML elements appear on the screen, such as colors, fonts, layout, spacing, and positioning.</p><br><br>
+
+                    <p><b>2. Basic Structure of CSS</b><br>
+                    A CSS rule consists of two main parts:<br>
+                    Selector: Targets the HTML element to apply styles.<br>
+                    Declaration Block: Contains the properties and values to style the selected element.</p><br><br>
+
+                    <p><b>3. CSS Syntax</b><br>
+                    CSS follows a straightforward syntax:<br>
+                    Selector: This is the HTML element (e.g., a paragraph, heading) you want to style.<br>
+                    Property: The aspect of the element you want to change (e.g., color, font size).<br>
+                    Value: The setting for the property (e.g., blue, 16px).</p><br><br>
+
+                    <p><b>4. Types of CSS Selectors</b><br>
+                    Element Selector: Targets HTML tags (e.g., paragraphs, headings).<br>
+                    Class Selector: Targets elements with a specific class.<br>
+                    ID Selector: Targets elements with a specific ID.<br>
+                    Universal Selector: Targets all elements on the page.</p><br><br>
+
+                    <p><b>5. CSS Colors</b><br>
+                    CSS allows you to specify colors in various ways, including:<br>
+                    Named colors: such as red, blue, or green.<br>
+                    Hexadecimal: A six-digit color code (e.g., #FF5733).<br>
+                    RGB: A value based on the Red, Green, and Blue color model (e.g., rgb(255, 87, 51)).<br>
+                    RGBA: RGB with an alpha channel for transparency.</p><br><br>
+
+                    <p><b>6. CSS Box Model</b><br>
+                    The CSS box model defines how elements are displayed on a page, consisting of:<br>
+                    Content: The actual content of the element (e.g., text, images).<br>
+                    Padding: Space around the content.<br>
+                    Border: A line surrounding the padding.<br>
+                    Margin: Space outside the border.</p><br><br>
+
+                    <p><b>7. CSS Layout Techniques</b><br>
+                    Block vs. Inline Elements: Block elements (like divs) take up the full width, while inline elements (like spans) take up only as much space as needed.<br>
+                    Flexbox: A layout model that enables flexible positioning of elements in a container.<br>
+                    Grid: A system for creating complex layouts using rows and columns.</p><br><br>
+
+                    <p><b>8. CSS Positioning</b><br>
+                    CSS offers several types of positioning:<br>
+                    Static: The default positioning for elements, where they flow normally within the document.<br>
+                    Relative: Positioned relative to its normal position.<br>
+                    Absolute: Positioned relative to the nearest positioned ancestor.<br>
+                    Fixed: Positioned relative to the viewport, meaning it stays in place when scrolling.<br>
+                    Sticky: Becomes fixed after scrolling past a certain point.</p><br><br>
+
+                    <p><b>9. CSS Media Queries</b><br>
+                    Media queries enable you to apply different styles depending on factors like screen size, orientation, and device type. This is crucial for creating responsive designs.</p><br>
+
+                    <p><b>10. CSS Transitions and Animations</b><br>
+                    Transitions: Allow smooth changes to CSS properties over time.<br>
+                    Animations: Involve defining keyframes that describe the changes an element goes through during an animation.</p><br><br>
+
+                    <p><b>11. CSS Best Practices</b><br>
+                    External Stylesheets: Keeping CSS in separate files helps maintain cleaner, more manageable code.<br>
+                    Organizing CSS: Group styles into logical sections (e.g., layout, typography, colors) for better readability.<br>
+                    Comments: Use comments to explain complex or important parts of the CSS.<br>
+                    Minification: In production environments, use minified CSS to reduce file sizes and improve load times.</p><br><br>
+                </div>
+                <br>
+
+                <iframe width="900" height="515" src="https://www.youtube.com/embed/c-I5S_zTwAc?si=nvK_6V243DvdjXIK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div id="big">JAVASCRIPT BASICS: </div>
+                <div id="justify">
+                    <p><b>1. What is JavaScript?</b><br>
+                        JavaScript is a dynamic, high-level programming language that is widely used to create interactive effects within web browsers. It allows you to manipulate web page elements, handle user interactions, and perform complex tasks like animations, form validation, and data manipulation.</p><br><br>
+
+
+
+                    <p><b>2. Basic Structure of JavaScript</b><br>
+                    JavaScript code consists of:<br>
+                    Statements: Instructions that tell the browser what to do (e.g., display a message, perform a calculation).<br>
+                    Expressions: Combinations of variables, values, and operators that produce a result.<br>
+                    Functions: Reusable blocks of code designed to perform a specific task</p><br><br>
+
+                    <p><b>3. JavaScript Syntax</b><br>
+                    JavaScript syntax is the set of rules that define a correctly structured JavaScript program. Key elements of JavaScript syntax include:<br>
+                    Variables: Used to store data.<br>
+                    Operators: Symbols used to perform operations on variables and values (e.g., + for addition, - for subtraction).<br>
+                    Control Flow: Statements that control the flow of execution, like loops and conditionals.</p><br><br>
+
+                    <p><b>4. Variables</b><br>
+                    Variables are containers for storing data. They can hold different types of information, such as:<br>
+                    String: Textual data enclosed in quotes (e.g., "Hello").<br>
+                    Number: Numeric values (e.g., 25, 3.14).<br>
+                    Boolean: Logical values (true or false).<br>
+                    You declare variables using the let, const, or var keywords, with let and const being preferred in modern JavaScript due to their scoping rules.</p><br><br>
+
+                    <p><b>5. Data Types</b><br>
+                    JavaScript has several data types:<br>
+                    Primitive types: These are the most basic types, including numbers, strings, booleans, null, undefined, and symbols.<br>
+                    Objects: More complex data structures used to store collections of values or functions (e.g., arrays, objects).</p><br><br>
+
+                    <p><b>6. Functions</b><br>
+                        Functions are blocks of reusable code designed to perform a specific task. They can accept parameters (input values) and return a result. Functions help make your code modular and more manageable.</p><br><br>
+
+                    <p><b>7. Control Structures</b><br>
+                    JavaScript provides several control structures for decision-making and repeating actions:<br>
+                    If-else statements: Used for conditional execution.<br>
+                    Switch statements: Used for checking a variable against multiple conditions.<br>
+                    Loops: Allow repeated execution of a block of code:<br>
+                    For loop: Used when you know how many times you want to repeat the action.<br>
+                    While loop: Used when you want to repeat an action as long as a condition is true.<br>
+                    Do-while loop: Similar to a while loop, but the condition is checked after the loop executes.</p><br><br>
+
+                    <p><b>8. Events</b><br>
+                    JavaScript enables interaction with HTML elements through events. An event occurs when a user performs an action like clicking a button or moving the mouse. You can use JavaScript to respond to these actions:<br>
+                    Click events: Triggered when an element is clicked.<br>
+                    Mouse events: Triggered by mouse actions like moving or hovering over elements.<br>
+                    Keyboard events: Triggered by key presses.</p><br><br>
+
+                    <p><b>9. Arrays and Objects</b><br>
+                    Arrays and objects are fundamental data structures in JavaScript.<br>
+                    Arrays: Ordered collections of data, indexed by numbers.<br>
+                    Objects: Unordered collections of key-value pairs, useful for storing related data.</p><br><br>
+
+                    <p><b>10. DOM Manipulation</b><br>
+                    The Document Object Model (DOM) represents the structure of a web page. JavaScript allows you to interact with the DOM by:<br>
+                    Selecting elements: Accessing HTML elements using selectors.<br>
+                    Changing content: Modifying the text or HTML content of elements.<br>
+                    Changing styles: Updating the appearance of elements dynamically.<br>
+                    Adding/removing elements: Creating or deleting elements from the page.</p><br><br>
+
+                    <p><b>11. Asynchronous JavaScript</b><br>
+                    JavaScript allows you to run code asynchronously, meaning some tasks can be done while others are running:<br>
+                    Callbacks: Functions passed into other functions that execute after the current task is completed.<br>
+                    Promises: Objects representing the eventual completion (or failure) of an asynchronous operation.<br>
+                    Async/await: Modern syntax for handling asynchronous code more readably.</p><br><br>
+
+                    <p><b>12. Error Handling</b><br>
+                    JavaScript provides mechanisms for handling errors in your code:<br>
+                    Try-catch blocks: Used to catch and handle exceptions (errors).<br>
+                    Throw statements: Allows you to create custom errors.</p><br><br>
+                        
+                    <p><b>13. JavaScript Best Practices</b><br>
+                    To write clean, maintainable JavaScript code:<br>
+                    Keep code DRY: Don't Repeat Yourself. Use functions and variables to avoid redundant code.<br>
+                    Write comments: Describe complex logic and functions for clarity.<br>
+                    Follow naming conventions: Use meaningful names for variables and functions.<br>
+                    Modular code: Break down your code into smaller, reusable functions or modules.</p><br><br>
+                </div>
+          </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleSubmenu(id) {
+        const submenu = document.getElementById(id);
+        submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+        }
+
+    </script>
+
+    </body>
+</html>
+    
