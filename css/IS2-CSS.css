@@ -8,7 +8,7 @@ html, body {
     margin: 0;
     padding-top: 100px;
     scroll-behavior: smooth;
-    background-image: linear-gradient(to right, #C2CAD0, #E7717D);
+    background-image: linear-gradient(to right, #87f19e, #a76269);
     scroll-padding-top: 90px;
     font-family: 'Poppins', sans-serif;
 }
@@ -96,8 +96,8 @@ html, body {
     opacity: 0;
     animation: fadeIn 1s ease-out forwards; 
     animation-delay: 1s;
-    border: #ffffff6b 1px solid;
-    background-color: pink;
+    border: #18472c69 1px solid;
+    background-color: #87f19eaf;
 }
 
 #buts:hover{
@@ -151,14 +151,14 @@ html, body {
 }
 
 .h3-color {
-    color: #04223b;
+    color: black;
     font-size: 25px;
     text-shadow: 1px 1px white;
 }
 
 .h1-color, .h1-color1 {
     font-size: 50px;
-    color: #04223b;
+    color: black;
     margin: -10px;
     text-shadow: 1px 1px white;
 }
